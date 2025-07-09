@@ -1,0 +1,48 @@
+/* Navigasi atas */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Kontainer semua browser */
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1 {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  margin: 10px;
+  padding: 5px;
+  background: white;
+}
+
+.browser > h2,
+.browser > p {
+  margin: 4px;
+  font-size: 90%;
+}
