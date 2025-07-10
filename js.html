@@ -1,18 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+<head>
+    <script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
 <body>
 
-<h2>What Can JavaScript Do?</h2>
+<h2>JavaScript Validation</h2>
 
-<p>JavaScript can change HTML attribute values.</p>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+  <meta charset="UTF-8">
+  <title>Contoh JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    img {
+      width: 100px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+  <h2>Belajar JavaScript</h2>
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+  <!-- Tombol Nyalakan dan Matikan Lampu -->
+  <h3>Nyalakan Lampu?</h3>
+  
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+  <img id="myImage" src="pic_bulboff.gif" alt="Lampu">
 
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+  <br>
+  <button onclick="turnOn()">Nyalakan Lampu</button>
+  <button onclick="turnOff()">Matikan Lampu</button>
+
+  <!-- Menampilkan Jam -->
+  <h3>Jam Sekarang</h3>
+  <p id="clock"></p>
+
+  <!-- Menampilkan Tanggal dan Jam Saat Ini -->
+  <h3>Tampilkan Tanggal dan Waktu</h3>
+  <button onclick="showDateTime()">Klik untuk menampilkan</button>
+  <p id="datetime"></p>
+
+  <!-- Contoh Penjumlahan Variabel -->
+  <h3>Penjumlahan Variabel</h3>
+  <p id="result"></p>
+
+  <script>
+    // Fungsi menyalakan lampu
+    function turnOn() {
+      document.getElementById('myImage').src = 'pic_bulbon.gif';
+    }
+
+    // Fungsi mematikan lampu
+    function turnOff() {
+      document.getElementById('myImage').src = 'pic_bulboff.gif';
+    }
+
+    // Fungsi menampilkan waktu real-time
+    setInterval(updateClock, 1000);
+    function updateClock() {
+      const d = new Date();
+      document.getElementById("clock").innerHTML =
+        d.getHours().toString().padStart(2, '0') + ":" +
+        d.getMinutes().toString().padStart(2, '0') + ":" +
+        d.getSeconds().toString().padStart(2, '0');
+    }
+
+    // Fungsi menampilkan tanggal dan waktu saat tombol diklik
+    function showDateTime() {
+      document.getElementById("datetime").innerHTML = new Date();
+    }
+
+    // Fungsi penjumlahan variabel
+    const y = 30;
+    const x = 10 + y;
+    document.getElementById("result").innerHTML = "Nilai x adalah: " + x;
+  </script>
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
 
 </body>
 </html>
