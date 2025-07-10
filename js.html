@@ -36,7 +36,7 @@ function validateForm() {
 
   <h2>Belajar JavaScript</h2>
 
-  <!-- Tombol Nyalakan dan Matikan Lampu -->
+ 
   <h3>Nyalakan Lampu?</h3>
   
 
@@ -46,31 +46,31 @@ function validateForm() {
   <button onclick="turnOn()">Nyalakan Lampu</button>
   <button onclick="turnOff()">Matikan Lampu</button>
 
-  <!-- Menampilkan Jam -->
+  
   <h3>Jam Sekarang</h3>
   <p id="clock"></p>
 
-  <!-- Menampilkan Tanggal dan Jam Saat Ini -->
+ 
   <h3>Tampilkan Tanggal dan Waktu</h3>
   <button onclick="showDateTime()">Klik untuk menampilkan</button>
   <p id="datetime"></p>
 
-  <!-- Contoh Penjumlahan Variabel -->
+  
   <h3>Penjumlahan Variabel</h3>
   <p id="result"></p>
 
   <script>
-    // Fungsi menyalakan lampu
+    
     function turnOn() {
       document.getElementById('myImage').src = 'pic_bulbon.gif';
     }
 
-    // Fungsi mematikan lampu
+  
     function turnOff() {
       document.getElementById('myImage').src = 'pic_bulboff.gif';
     }
 
-    // Fungsi menampilkan waktu real-time
+
     setInterval(updateClock, 1000);
     function updateClock() {
       const d = new Date();
@@ -80,12 +80,12 @@ function validateForm() {
         d.getSeconds().toString().padStart(2, '0');
     }
 
-    // Fungsi menampilkan tanggal dan waktu saat tombol diklik
+    
     function showDateTime() {
       document.getElementById("datetime").innerHTML = new Date();
     }
 
-    // Fungsi penjumlahan variabel
+
     const y = 30;
     const x = 10 + y;
     document.getElementById("result").innerHTML = "Nilai x adalah: " + x;
