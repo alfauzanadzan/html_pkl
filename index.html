@@ -1,170 +1,157 @@
 <!DOCTYPE html>
-<html>
-    <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>  
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML TUTORIAL</title>
+
+  <!-- Link ke file CSS eksternal -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- CSS internal untuk gaya tabel -->
+  <style>
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+    th, td {
+      background-color: #d34989;
+    }
+  </style>
+
+  <!-- JavaScript sederhana -->
+  <script>
+    function myFunction() { 
+      document.getElementById("demo").innerHTML = "Hello!";
+    }
+  </script>
+</head>
+
+<body style="background-color:powderblue;">
+  
+  <!-- Navigasi Menu -->
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>  
   </ul>
 
-<head>
-    <title>HTML TUTORIAL</title>
+  <!-- Judul Utama -->
+  <h1 style="text-align:center;">awal</h1>
 
-<h1 style="text-align:center;"> awal</h1>
-<button type="button" onclick="myFunction()">Click Me!</button>
-<p id="demo"></p>
-HTML Forms</h2>
+  <!-- Tombol dan Output Teks -->
+  <button type="button" onclick="myFunction()">Click Me!</button>
+  <p id="demo"></p> <!-- Isi teks akan berubah setelah klik tombol -->
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-
-
-<script>
-function myFunction() { 
-  document.getElementById("demo").innerHTML = "Hello!";
-}
-</script>
-
-<source srcset="yo.jpg"> <img src="logo wkrm.jpeg" alt="Trulli" width="" height="20">
-<picture>
-  <source srcset="yo.jpg"> 
-  <source srcset="img_girl.jpg">
-  <img src="img_beatles.gif" alt="Beatles" style="width: 20px;;">
-</picture>
-<nav>
-  <a href="/html/">HTML</a> |
-  <a href="/css/">CSS</a> |
-  <a href="/js/">JavaScript</a> |
-  <a href="/jquery/">jQuery</a>
-</nav>
-<link rel="stylesheet" href="styles.css">
-<body style="background-color:powderblue;"></body>
-</head>
-<tr></tr>
-</style>
-</head>
-<body>
-   
-  </tr>
-<body>
-<hr>
-<!DOCTYPE html>
-<html>
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-</body>
-</html>
-
-
-
-<p style="color:red;"><b>latihan pkl</b> <sub><b>w3school</b></sub></p>
-<hr>
-
-<p id="demo"></p>
-
-
-<h1>The article element</h1>
-
-<article>
-  <h2>Google Chrome</h2>
-  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
-</article>
-
-<article>
-  <h2>Mozilla Firefox</h2>
-  <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-</article>
-
-<article>
-  <h2>Microsoft Edge</h2>
-  <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
-</article>
-
-<address>
-Written by John Doe.<br>
-Visit us at:<br>
-<span>
-Box 564, Disneyland<br>
-USA
-</address>
-<img src="download.jpeg" alt="alamat denah" style="vertical-align:middle; width:90px; height:auto;">
-<br>    
-</span>
-<a href="https://www.w3schools.com">This is a link</a><br>
-<a href="https://www.w3schools.com">Visit W3Schools</a><br>
-<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
-<p style="color:rgb(246, 249, 249);">This is a red paragraph.</p>
-
-
-
-
-<style>
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-}
-th, td {
-  background-color: #d34989;
-}
-</style>
-</head>
-<body>
-
-<h2>Table With Invisible Borders</h2>
-
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-    <h2>A Description List</h2>
-
+  <!-- Formulir Input Nama -->
+  <h2>HTML Forms</h2>
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
     
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form> 
 
-<dl>
- <span style="border: 1px solid black">HTML</span>
-  <dd>- black hot drink</dd>
-   <span style="border: 1px solid black">CSS</span>
-  <dd>- white cold drink</dd>
-</dl>
-  </tr>
-</table>
-<p style="color:blue;">This is a blue paragraph.</p>
+  <!-- Gambar & Picture Element -->
+  <img src="logo wkrm.jpeg" alt="Trulli" height="20"> <!-- Gambar logo -->
+  <picture>
+    <source srcset="yo.jpg">
+    <source srcset="img_girl.jpg">
+    <img src="img_beatles.gif" alt="Beatles" style="width: 20px;">
+  </picture>
+
+  <!-- Navigasi Horizontal -->
+  <nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+  </nav>
+
+  <hr>
+
+  <!-- Paragraf latihan -->
+  <p style="color:red;"><b>latihan pkl</b> <sub><b>w3school</b></sub></p>
+
+  <hr>
+
+  <!-- Artikel tentang browser -->
+  <h1>The article element</h1>
+  <article>
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+
+  <article>
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+  </article>
+
+  <article>
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+  </article>
+
+  <!-- Alamat dan denah (gambarnya di samping teks) -->
+  <div style="display: flex; align-items: center; gap: 15px;">
+    <address>
+      Written by John Doe.<br>
+      Visit us at:<br>
+      Box 564, Disneyland<br>
+      USA
+    </address>
+    <img src="download.jpeg" alt="alamat denah" style="width: 90px; height: auto;">
+  </div>
+
+  <br>
+
+  <!-- Link ke website -->
+  <a href="https://www.w3schools.com">This is a link</a><br>
+  <a href="https://www.w3schools.com">Visit W3Schools</a><br>
+  <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+  <!-- Paragraf putih (tidak terlihat karena latar putih) -->
+  <p style="color:rgb(246, 249, 249);">This is a red paragraph.</p>
+
+  <!-- Tabel -->
+  <h2>Table With Invisible Borders</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <!-- Description List (DL) -->
+  <h2>A Description List</h2>
+  <dl>
+    <dt><span style="border: 1px solid black">HTML</span></dt>
+    <dd>- black hot drink</dd>
+    <dt><span style="border: 1px solid black">CSS</span></dt>
+    <dd>- white cold drink</dd>
+  </dl>
+
+  <!-- Paragraf biru -->
+  <p style="color:blue;">This is a blue paragraph.</p>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
